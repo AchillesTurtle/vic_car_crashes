@@ -7,14 +7,19 @@ class CrashDataLoader():
         # all functions will be dependant on path_list order
         self.path_list = path_list
         print("Loading data from: \n{}".format("\n".join(path_list)))
+        
     def load_file(self, file_name):
+        # append file from different sources without preprocessing
         df_list = [pd.read_csv(Path(folder_path) / file_name) for folder_path in self.path_list]
         data_df = pd.concat(df_list).reset_index(drop=True)
         data_df.columns = data_df.columns.str.lower()
+        
         return data_df
 
-    def load_selected_features(self):
 
+    def load_severity_features(self):
+        # [Not used]
+        # Load features 
         accident_df = self.load_file("ACCIDENT.csv")
         location_df = self.load_file("ACCIDENT_LOCATION.csv")
         atmospheric_df = self.load_file("ATMOSPHERIC_COND.csv")
