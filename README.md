@@ -22,7 +22,7 @@
 
 This is an analysis of the [VicRoads CrashStats](https://discover.data.vic.gov.au/dataset/crash-stats-data-extract), aiming to provide value and realistic plans to help achieve the targets of [Victorian Road Safety Strategy 2021-2030](https://www.tac.vic.gov.au/road-safety/victorian-road-safety-strategy/victorian-road-safety-strategy-2021-2030).
 
-**Target of repository:** Lower fatality rate by establishing additional emergency response sites thor.
+**Target of repository:** Lower fatality rate by establishing additional emergency response sites throughout Victoria.
 
 All of the code files in this directory were ran locally.
 
